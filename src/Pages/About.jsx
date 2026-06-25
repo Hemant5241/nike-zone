@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       {/* Hero Section */}
-      <div className="bg-gray-950 text-white py-20 px-6 text-center relative overflow-hidden">
+      <div className="bg-gray-950 text-white py-12 md:py-20 px-4 md:px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#138695]/20 to-transparent pointer-events-none"></div>
         <div className="max-w-4xl mx-auto relative z-10">
           <span className="text-[#33CCCC] font-bold uppercase tracking-widest text-xs">Our Journey</span>
@@ -47,14 +47,14 @@ const About = () => {
       </div>
 
       {/* Value Pillars */}
-      <div className="bg-gray-50 py-16 md:py-24 border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-16">What Defines Us</h2>
+      <div className="bg-gray-50 py-12 md:py-24 border-y border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-10 md:mb-16">What Defines Us</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             {/* Pillar 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-[#138695]/10 rounded-xl flex items-center justify-center text-[#138695] mb-6">
+            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-[#138695]/10 rounded-xl flex items-center justify-center text-[#138695] mb-4 md:mb-6">
                 <Shield size={24} />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-3">Authenticity & Quality</h3>
@@ -64,22 +64,22 @@ const About = () => {
             </div>
 
             {/* Pillar 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-[#138695]/10 rounded-xl flex items-center justify-center text-[#138695] mb-6">
+            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-[#138695]/10 rounded-xl flex items-center justify-center text-[#138695] mb-4 md:mb-6">
                 <Sparkles size={24} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Innovative Design</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 md:mb-3">Innovative Design</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 Seamless blend of athletic utility and sleek urban fashion. Pushing the boundaries of cushioning, flexibility, and lightweight design.
               </p>
             </div>
 
             {/* Pillar 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <div className="w-12 h-12 bg-[#138695]/10 rounded-xl flex items-center justify-center text-[#138695] mb-6">
+            <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+              <div className="w-12 h-12 bg-[#138695]/10 rounded-xl flex items-center justify-center text-[#138695] mb-4 md:mb-6">
                 <Users size={24} />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Community First</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 md:mb-3">Community First</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 Crafting active support systems and responsive return policies to make sure our community experiences premium customer care.
               </p>

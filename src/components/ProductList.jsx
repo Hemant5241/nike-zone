@@ -32,7 +32,7 @@ const ProductList = (props) => {
         </div>
         
         <div className='max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
-          <h2 className='text-4xl md:text-6xl font-black tracking-tighter text-black uppercase mb-4'>
+          <h2 className='text-3xl sm:text-4xl md:text-6xl font-black tracking-tighter text-black uppercase mb-2 md:mb-4'>
             {details.title}
           </h2>
           <p className='text-base md:text-lg text-gray-600 font-medium max-w-2xl leading-relaxed'>
@@ -57,7 +57,7 @@ const ProductList = (props) => {
         </div>
 
         {/* Product Grid */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-12 xl:gap-x-8'>
+        <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 sm:gap-x-6 gap-y-8 sm:gap-y-12 xl:gap-x-8'>
           {all_product.map((product) => {
             if (props.category === product.category) {
               return <Item key={product.id} product={product} />

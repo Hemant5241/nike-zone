@@ -52,16 +52,16 @@ const SizeGuide = () => {
   }
 
   return (
-    <div className="bg-white text-gray-800 min-h-screen py-16 px-6">
+    <div className="bg-white text-gray-800 min-h-screen py-10 md:py-16 px-4 md:px-6">
       <div className="max-w-5xl mx-auto">
         
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <div className="w-12 h-12 bg-[#138695]/10 rounded-full flex items-center justify-center text-[#138695] mx-auto mb-4">
             <Ruler size={24} />
           </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Official Sizing & Fit Guide</h1>
-          <p className="text-gray-500 max-w-lg mx-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Official Sizing & Fit Guide</h1>
+          <p className="text-gray-500 max-w-lg mx-auto text-sm md:text-base">
             Find your perfect fit. Compare international sizes, calculate your Nike shoe size, and learn how to measure your feet correctly.
           </p>
         </div>
@@ -151,8 +151,8 @@ const SizeGuide = () => {
         </div>
 
         {/* How to Measure Feet Guide */}
-        <div className="bg-gray-50 border border-gray-100 rounded-3xl p-8 md:p-12">
-          <h2 className="text-2xl font-extrabold text-gray-900 mb-8 text-center">How to Measure Your Feet</h2>
+        <div className="bg-gray-50 border border-gray-100 rounded-3xl p-6 md:p-12">
+          <h2 className="text-xl md:text-2xl font-extrabold text-gray-900 mb-6 md:mb-8 text-center">How to Measure Your Feet</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-3">

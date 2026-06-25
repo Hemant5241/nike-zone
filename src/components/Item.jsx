@@ -6,7 +6,7 @@ const Item = ({ product }) => {
   return (
     <div className='group flex flex-col relative'>
       <Link to={`/products/${product?.id}`} className='w-full'>
-        <div className='relative w-full aspect-square overflow-hidden rounded-2xl bg-[#f6f6f6] flex items-center justify-center p-6 border border-gray-100 group-hover:border-black transition-colors duration-500'>
+        <div className='relative w-full aspect-square overflow-hidden rounded-2xl bg-[#f6f6f6] flex items-center justify-center p-3 sm:p-6 border border-gray-100 group-hover:border-black transition-colors duration-500'>
           {/* Product Image */}
           <img 
             src={product?.image} 

@@ -68,14 +68,14 @@ const Hero = ({ activeData, activeIndex, handleActiveData, ShoesData }) => {
             transition={{ duration: 0.8, ease: easeInOut }}
             className='absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0'
           >
-            <span className='text-white/[0.03] text-[12rem] md:text-[20rem] lg:text-[28rem] font-black uppercase leading-none tracking-tighter'>
+            <span className='text-white/[0.03] text-[8rem] sm:text-[12rem] md:text-[20rem] lg:text-[28rem] font-black uppercase leading-none tracking-tighter'>
               {activeData.modal}
             </span>
           </motion.div>
         </AnimatePresence>
 
         {/* Main hero layout */}
-        <div className='container relative z-10 grid grid-cols-1 lg:grid-cols-12 min-h-[85vh] items-center gap-8 pb-12 lg:pb-0'>
+        <div className='container relative z-10 grid grid-cols-1 lg:grid-cols-12 min-h-screen items-center gap-8 pb-28 lg:pb-0 pt-32 lg:pt-0'>
 
           {/* Left: Content Area (7 cols) */}
           <div className='lg:col-span-5 flex flex-col justify-center py-10 lg:py-0 order-2 lg:order-1'>
@@ -232,7 +232,7 @@ const Hero = ({ activeData, activeIndex, handleActiveData, ShoesData }) => {
           </div>
 
           {/* Right: Vertical Shoe Picker (3 cols) */}
-          <div className='lg:col-span-3 flex lg:flex-col items-center justify-center gap-6 lg:gap-8 order-3'>
+          <div className='lg:col-span-3 flex flex-wrap lg:flex-col items-center justify-center gap-4 sm:gap-6 lg:gap-8 order-3'>
             
             {/* Slide progress indicator */}
             <motion.div

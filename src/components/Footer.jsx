@@ -27,7 +27,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0f0f0f] text-white font-poppins pt-24 pb-10 border-t border-white/10 relative overflow-hidden">
+    <footer className="bg-[#0f0f0f] text-white font-poppins pt-16 md:pt-24 pb-10 border-t border-white/10 relative overflow-hidden">
       
       {/* Background massive text overlay */}
       <div className="absolute top-0 left-0 w-full overflow-hidden pointer-events-none select-none opacity-[0.03] flex items-center justify-center">
@@ -37,9 +37,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Top section: Newsletter & Massive Title */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 mb-16 md:mb-24 items-start lg:items-end">
           <div>
-            <h2 className="text-5xl md:text-7xl font-black tracking-tighter mb-6 leading-[0.95]">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter mb-4 md:mb-6 leading-[0.95]">
               BE THE FIRST<br/>TO KNOW
             </h2>
             <p className="text-white/60 max-w-sm mb-8 text-sm">
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:justify-self-end">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 lg:justify-self-end">
             <div>
               <h4 className="text-xs font-bold uppercase tracking-widest mb-6 text-white/50">Shop</h4>
               <ul className="space-y-4">
@@ -86,7 +86,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
+            <div>
               <h4 className="text-xs font-bold uppercase tracking-widest mb-6 text-white/50">Company</h4>
               <ul className="space-y-4">
                 {links.company.map((link) => (
@@ -104,7 +104,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-6">
-          <div className="flex items-center gap-6 text-white/40">
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-white/40 text-center md:text-left">
             <span className="text-xs font-medium tracking-wide">
               &copy; {new Date().getFullYear()} Nike, Inc. All Rights Reserved
             </span>

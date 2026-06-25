@@ -35,14 +35,14 @@ const TrackOrder = () => {
   }
 
   return (
-    <div className="bg-white text-gray-800 min-h-screen py-16 px-6">
+    <div className="bg-white text-gray-800 min-h-screen py-10 md:py-16 px-4 md:px-6">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 md:mb-12">
           <div className="w-12 h-12 bg-[#138695]/10 rounded-full flex items-center justify-center text-[#138695] mx-auto mb-4">
             <Package size={24} />
           </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Track Your Order</h1>
-          <p className="text-gray-500 max-w-sm mx-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Track Your Order</h1>
+          <p className="text-gray-500 max-w-sm mx-auto text-sm md:text-base">
             Enter your Order ID to track dispatch updates, locations, and estimated delivery.
           </p>
         </div>
@@ -74,11 +74,11 @@ const TrackOrder = () => {
 
         {/* Tracking Details Card */}
         {trackingData && (
-          <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8 shadow-sm">
+          <div className="bg-gray-50 border border-gray-100 rounded-2xl p-5 md:p-8 shadow-sm">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-200/60 pb-6 mb-6 gap-4">
               <div>
                 <span className="text-xs text-gray-400 font-bold uppercase tracking-wider">Tracking Details for</span>
-                <h3 className="text-lg font-extrabold text-gray-900 mt-0.5">Order ID: {trackingData.orderId}</h3>
+                <h3 className="text-lg md:text-xl font-extrabold text-gray-900 mt-0.5">Order ID: {trackingData.orderId}</h3>
               </div>
               <div className="flex flex-wrap gap-4 text-sm">
                 <div className="bg-emerald-50 text-emerald-800 px-3 py-1 rounded-md font-semibold flex items-center gap-1">

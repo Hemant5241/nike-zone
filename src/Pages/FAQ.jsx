@@ -32,14 +32,14 @@ const FAQ = () => {
   }
 
   return (
-    <div className="bg-white text-gray-800 min-h-screen py-16 px-6">
+    <div className="bg-white text-gray-800 min-h-screen py-10 md:py-16 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <div className="w-12 h-12 bg-[#138695]/10 rounded-full flex items-center justify-center text-[#138695] mx-auto mb-4">
             <HelpCircle size={24} />
           </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Frequently Asked Questions</h1>
-          <p className="text-gray-500 max-w-md mx-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Frequently Asked Questions</h1>
+          <p className="text-gray-500 max-w-md mx-auto text-sm md:text-base">
             Find quick answers to common queries about orders, shipping, sizing, and authentications.
           </p>
         </div>

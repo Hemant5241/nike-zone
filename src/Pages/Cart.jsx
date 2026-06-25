@@ -16,16 +16,16 @@ const Cart = () => {
   const totalAmount = getTotalCartAmount()
 
   return (
-    <div className='min-h-screen bg-white text-black py-12 md:py-20'>
+    <div className='min-h-screen bg-white text-black py-8 md:py-20'>
       <div className='max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
         
         {totalItems === 0 ? (
           // Empty State
-          <div className='flex flex-col items-center justify-center text-center py-20 min-h-[60vh]'>
-            <div className='w-48 h-48 md:w-64 md:h-64 mb-8 opacity-50 grayscale mix-blend-multiply'>
+          <div className='flex flex-col items-center justify-center text-center py-10 md:py-20 min-h-[60vh]'>
+            <div className='w-32 h-32 md:w-64 md:h-64 mb-8 opacity-50 grayscale mix-blend-multiply'>
               <img src={EmptyCart} alt='Empty Cart' className='w-full h-full object-contain' />
             </div>
-            <h1 className='text-4xl md:text-5xl font-black uppercase tracking-tighter mb-4'>Your Bag is Empty.</h1>
+            <h1 className='text-3xl md:text-5xl font-black uppercase tracking-tighter mb-4'>Your Bag is Empty.</h1>
             <p className='text-gray-500 mb-8 max-w-md mx-auto'>
               Looks like you haven't added anything to your bag yet. Discover our latest gear and elevate your game.
             </p>
@@ -111,8 +111,8 @@ const Cart = () => {
 
               {/* Right Column: Order Summary */}
               <div className='lg:col-span-4'>
-                <div className='bg-[#fafafa] p-8 md:p-10 rounded-[2.5rem] border border-gray-100 lg:sticky lg:top-28'>
-                  <h2 className='text-2xl font-black uppercase tracking-tight mb-8'>Summary</h2>
+                <div className='bg-[#fafafa] p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-gray-100 lg:sticky lg:top-28'>
+                  <h2 className='text-xl md:text-2xl font-black uppercase tracking-tight mb-6 md:mb-8'>Summary</h2>
                   
                   <div className='space-y-4 mb-8'>
                     <div className='flex justify-between text-gray-600 font-medium'>

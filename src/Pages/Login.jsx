@@ -37,7 +37,7 @@ const Login = () => {
         <h1 className="text-[20vw] font-black uppercase tracking-tighter whitespace-nowrap">ZONE</h1>
       </div>
 
-      <div className="bg-white rounded-[2.5rem] shadow-2xl shadow-black/5 border border-gray-100 max-w-[480px] w-full p-8 sm:p-12 relative z-10">
+      <div className="bg-white rounded-[2rem] sm:rounded-[2.5rem] shadow-2xl shadow-black/5 border border-gray-100 max-w-[480px] w-full p-6 sm:p-12 relative z-10">
         
         {/* Header / Logo */}
         <div className="text-center mb-10">

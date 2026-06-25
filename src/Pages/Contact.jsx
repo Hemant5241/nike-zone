@@ -7,11 +7,11 @@ const Contact = () => {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
-        <div className="max-w-3xl mb-16">
-          <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6">
+        <div className="max-w-3xl mb-10 md:mb-16">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter mb-4 md:mb-6">
             Get in Touch.
           </h1>
-          <p className="text-gray-500 text-lg md:text-xl font-medium leading-relaxed">
+          <p className="text-gray-500 text-base md:text-lg lg:text-xl font-medium leading-relaxed">
             Whether you have a question about our premium gear, need support with an order, or want to collaborate, our team is ready to help you push your limits.
           </p>
         </div>
@@ -22,28 +22,28 @@ const Contact = () => {
           <div className="lg:col-span-5 space-y-8">
             {/* Info Cards */}
             <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-[#fafafa] p-8 rounded-3xl border border-gray-100 hover:border-black transition-colors duration-300">
-                <MapPin className="w-8 h-8 text-black mb-6" />
-                <h3 className="font-black text-xs uppercase tracking-widest mb-2">Headquarters</h3>
+              <div className="bg-[#fafafa] p-6 md:p-8 rounded-3xl border border-gray-100 hover:border-black transition-colors duration-300">
+                <MapPin className="w-8 h-8 text-black mb-4 md:mb-6" />
+                <h3 className="font-black text-xs uppercase tracking-widest mb-1 md:mb-2">Headquarters</h3>
                 <p className="text-sm text-gray-600 leading-relaxed font-medium">
                   Pune, Maharashtra<br />
                   India, 411001
                 </p>
               </div>
               
-              <div className="bg-[#fafafa] p-8 rounded-3xl border border-gray-100 hover:border-black transition-colors duration-300">
-                <Phone className="w-8 h-8 text-black mb-6" />
-                <h3 className="font-black text-xs uppercase tracking-widest mb-2">Call Us</h3>
+              <div className="bg-[#fafafa] p-6 md:p-8 rounded-3xl border border-gray-100 hover:border-black transition-colors duration-300">
+                <Phone className="w-8 h-8 text-black mb-4 md:mb-6" />
+                <h3 className="font-black text-xs uppercase tracking-widest mb-1 md:mb-2">Call Us</h3>
                 <p className="text-sm text-gray-600 leading-relaxed font-medium">
                   +91 00000 00000<br />
                   Mon-Fri, 9AM - 6PM
                 </p>
               </div>
 
-              <div className="bg-[#fafafa] p-8 rounded-3xl border border-gray-100 hover:border-black transition-colors duration-300 sm:col-span-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="bg-[#fafafa] p-6 md:p-8 rounded-3xl border border-gray-100 hover:border-black transition-colors duration-300 sm:col-span-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
-                  <Mail className="w-8 h-8 text-black mb-4 sm:mb-6" />
-                  <h3 className="font-black text-xs uppercase tracking-widest mb-1">Email Support</h3>
+                  <Mail className="w-8 h-8 text-black mb-4 md:mb-6" />
+                  <h3 className="font-black text-xs uppercase tracking-widest mb-1 md:mb-2">Email Support</h3>
                   <p className="text-sm text-gray-600 font-medium">support@nikezone.com</p>
                 </div>
                 <button className="px-6 py-3 bg-black text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-neutral-800 transition-colors shrink-0">
@@ -67,8 +67,8 @@ const Contact = () => {
           </div>
 
           {/* Right Column: Contact Form */}
-          <div className="lg:col-span-7 bg-[#fafafa] p-8 md:p-12 rounded-[2.5rem] border border-gray-100">
-            <div className="flex items-center gap-3 mb-8">
+          <div className="lg:col-span-7 bg-[#fafafa] p-6 sm:p-8 md:p-12 rounded-[2rem] md:rounded-[2.5rem] border border-gray-100">
+            <div className="flex items-center gap-3 mb-6 md:mb-8">
               <MessageSquare className="w-6 h-6 text-black" />
               <h2 className="text-xl font-black uppercase tracking-tight">Send a Message</h2>
             </div>

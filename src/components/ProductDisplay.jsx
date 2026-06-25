@@ -56,11 +56,11 @@ const ProductDisplay = (props) => {
                     </div>
                     
                     {/* Main Image View */}
-                    <div className='flex-1 bg-[#f6f6f6] rounded-3xl overflow-hidden flex items-center justify-center p-8 md:p-12 border border-gray-100 relative group cursor-zoom-in min-h-[400px] md:min-h-[600px] order-1 md:order-2'>
+                    <div className='flex-1 bg-[#f6f6f6] rounded-3xl overflow-hidden flex items-center justify-center p-6 md:p-12 border border-gray-100 relative group cursor-zoom-in min-h-[300px] md:min-h-[600px] order-1 md:order-2'>
                         <img 
                             src={mainImage} 
                             alt={product.name} 
-                            className='max-h-full object-contain transition-transform duration-700 ease-out group-hover:scale-110 filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.08)]' 
+                            className='max-h-[250px] md:max-h-full object-contain transition-transform duration-700 ease-out group-hover:scale-110 filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.08)]' 
                         />
                         <span className='absolute top-6 left-6 bg-black text-white text-[10px] font-mono tracking-widest px-3 py-1.5 rounded-full uppercase font-bold shadow-md'>
                             {product.category}'s Collection
@@ -82,7 +82,7 @@ const ProductDisplay = (props) => {
                         </div>
 
                         {/* Title */}
-                        <h1 className='text-black text-3xl md:text-4xl lg:text-5xl font-black tracking-tight uppercase leading-none mb-3'>
+                        <h1 className='text-black text-3xl md:text-4xl lg:text-5xl font-black tracking-tight uppercase leading-tight md:leading-none mb-3'>
                             {product.name}
                         </h1>
                         
@@ -103,8 +103,8 @@ const ProductDisplay = (props) => {
                         </div>
 
                         {/* Price Card */}
-                        <div className='flex items-baseline gap-4 mt-6'>
-                            <span className='text-black text-4xl font-black tracking-tight'>
+                        <div className='flex flex-wrap items-baseline gap-2 md:gap-4 mt-6'>
+                            <span className='text-black text-3xl md:text-4xl font-black tracking-tight'>
                                 ${product.new_price}
                             </span>
                             {product.old_price && (
@@ -166,18 +166,18 @@ const ProductDisplay = (props) => {
 
                     {/* Action Buttons */}
                     <div className='space-y-3 pt-2'>
-                        <div className='flex gap-3'>
+                        <div className='flex gap-2 md:gap-3'>
                             {/* Add to Cart */}
                             <button 
                                 onClick={handleAddToCart}
-                                className={`flex-1 py-5 rounded-full font-black text-sm uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-3 border-2 ${
+                                className={`flex-1 py-4 md:py-5 rounded-full font-black text-xs md:text-sm uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 md:gap-3 border-2 ${
                                     isAdded 
                                         ? 'bg-emerald-600 border-emerald-600 text-white' 
                                         : 'bg-black border-black text-white hover:bg-neutral-900 shadow-xl shadow-black/10 hover:shadow-black/20 hover:scale-[1.01]'
                                 }`}
                             >
                                 <ShoppingBag size={18} />
-                                <span>{isAdded ? `Added! (${cartItems[product.id] || 1} in bag)` : (cartItems[product.id] > 0 ? `Add Another (${cartItems[product.id]} in bag)` : 'Add to Bag')}</span>
+                                <span className="text-center">{isAdded ? `Added! (${cartItems[product.id] || 1})` : (cartItems[product.id] > 0 ? `Add Another (${cartItems[product.id]})` : 'Add to Bag')}</span>
                             </button>
 
                             {/* Favorite Toggle */}
