@@ -1,5 +1,6 @@
 {
   "name": "nike-zone",
+  "homepage": "https://nike-shoe-zone.vercel.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

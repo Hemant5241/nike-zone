@@ -1,5 +1,7 @@
 # NIKE ZONE ⚡
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://nike-shoe-zone.vercel.app/)
+
 A premium, minimalist e-commerce storefront reimagined for modern performance and lifestyle. Built with a high-contrast design system, smooth micro-animations, and fluid responsive layouts.
 
 Developed & Maintained by **Hemant** ([@Hemant5241](https://github.com/Hemant5241))
@@ -64,7 +66,8 @@ npm run build
 ---
 
 ## 🌐 Deployment
-The project is configured out-of-the-box for seamless deployment on **Vercel**:
+The project is deployed on **Vercel** and is accessible at:
+* **Live Link**: [https://nike-shoe-zone.vercel.app/](https://nike-shoe-zone.vercel.app/)
 * **Build Command**: `npm run build`
 * **Output Directory**: `dist`
 * **SPA Routing**: Handled automatically via custom rewrites in `vercel.json`.
